@@ -3,7 +3,7 @@ let bgRotate = 0;
 let rSpeed = 0.2;
 
 function preload() {
-  bg = loadImage('assets/bgstripe.jpg');
+  bg = loadImage('assets/bgstripe.JPG');
   tent = loadImage('assets/tent.png');
 
 }
