@@ -11,7 +11,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1920, 1080);
+  createCanvas(windowWidth, windowHeight);
   // if (windowHeight > 3000) {
   //   h = 3000
   // }
@@ -27,7 +27,8 @@ function draw() {
 
   push();
   translate(width/2, height);
-  image(tent, 0, -450, width - 600, height - 180);
+  let h = height - 180;
+  image(tent, 0, -h/2, width - 600, h);
   pop();
 }
 
