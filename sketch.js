@@ -27,8 +27,8 @@ function draw() {
 
   push();
   translate(width/2, height);
-  let h = height - 180;
-  image(tent, 0, -h/2, width - 600, h);
+  let h = width * 0.47;
+  image(tent, 0, -h/2, width * 0.8, h);
   pop();
 }
 
