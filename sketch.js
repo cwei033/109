@@ -12,9 +12,9 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  // if (windowHeight > 3000) {
-  //   h = 3000
-  // }
+  if (windowHeight > windowWidth) {
+    height = windowWidth * 0.7;
+  }
   textAlign(CENTER);
   imageMode(CENTER);
   angleMode(DEGREES);
