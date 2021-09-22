@@ -20,13 +20,13 @@ function setup() {
 function draw() {
   drawRotatebg(bgRotate);
   bgRotate += rSpeed
-  image(tent, width/2, 500, 1368, 900);
+  image(tent, width / 2, height - 450, 1368, 900);
 }
 
 function drawRotatebg(rotation) {
   push();
   background(255);
-  translate(width/2, height);
+  translate(width / 2, height);
   rotate(rotation);
   image(bg, 0, 0, 3000, 3000);
   pop();
