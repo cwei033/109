@@ -1,12 +1,15 @@
 let bg;
 let bgRotate = 0;
 let rSpeed = 0.2;
+let tent;
+let song;
 // let w = windowWidth;
 // let h = windowHeight;
 
 function preload() {
-  bg = loadImage('assets/bgstripe.JPG');
+  bg = loadImage('assets/IMG_2471.JPG');
   tent = loadImage('assets/tent.png');
+  song = loadSound('assets/clowning-around.mp3');
 
 }
 
@@ -18,8 +21,16 @@ function setup() {
   textAlign(CENTER);
   imageMode(CENTER);
   angleMode(DEGREES);
-
 }
+
+// function mousePressed() {
+//   if (song.isPlaying()) {
+//     // .isPlaying() returns a boolean
+//     song.stop();
+//   } else {
+//     song.play();
+//   }
+// }
 
 function draw() {
   drawRotatebg(bgRotate);
