@@ -18,8 +18,17 @@ h1 {
 }
 
 .text {
-  padding-top: 4%;
+  padding-top: 3%;
   text-shadow: 0 1px 0px #62797c, 1px 0 0px #5dabcd, 1px 2px 1px #62797c, 2px 1px 1px #5dabcd, 2px 3px 2px #62797c, 3px 2px 2px #5dabcd, 3px 4px 2px #62797c, 4px 3px 3px #5dabcd, 4px 5px 3px #62797c, 5px 4px 2px #5dabcd, 5px 6px 2px #62797c, 6px 5px 2px #5dabcd, 6px 7px 1px #62797c, 7px 6px 1px #5dabcd, 7px 8px 0px #62797c, 8px 7px 0px #5dabcd;
   color: black;
   width: 100%;
+}
+
+.statement {
+  position: absolute;
+  margin: 47% 0 0 1%;
+  background-color: #5dabcd;
+  border: 3px solid white;
+  color: white;
+  cursor: pointer;
 }

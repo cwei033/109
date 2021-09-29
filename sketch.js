@@ -9,6 +9,7 @@ let elephant;
 let giraffe;
 let star;
 let rye;
+let worksans;
 let cnv;
 
 let state = 'initial';
@@ -30,6 +31,7 @@ function preload() {
   giraffe = loadImage('assets/giraffe.JPG');
   star = loadImage('assets/star.PNG')
   rye = loadFont('assets/Rye-Regular.ttf')
+  worksans = loadFont('assets/WorkSans-VariableFont_wght.ttf');
 
 }
 
@@ -154,7 +156,13 @@ function clickText() {
   let h = width * 0.47;
   textSize(width*.008);
   textFont('rye');
-  text(`CLICK SCREEN TO PREVIEW OUR ATTRACTIONS!`, 0, -h/3);
+  text(`CLICK SCREEN TO PREVIEW OUR ATTRACTIONS!`, 0, -h*0.54);
+  rectMode(CENTER);
+  textLeading(25);
+  textFont('worksans');
+  text(`Through this website, I intended to emulate the experience of a vintage circus. Specifically, I tried to make the website fun and enticing for the viewer, similar to if they were to visit a real circus. Although no real circus acts are depicted on the website due to my inability to capture live footage myself, I sought to create a similar experience through the inclusion of performance posters. The reasoning behind the use of animal characters on the posters as opposed to depictions of real people is because I wanted to incorporate as many elements of child-like wonder on the website as possible. To further enhance the experience, I also added traditional circus tracks as background music. I intentionally designed the music such that the viewer would not be able to turn it off so as to emulate the in-person sensation of being bombarded by a cacophony of sounds. Additionally, I included star-shaped confetti not only to recreate the experience of watching a circus performance but also to increase visual interest on the website.
+
+  [BGM]: https://www.silvermansound.com/free-music/clowning-around`, 0, -h*0.135, width*0.25, width*0.35);
   pop();
 }
 
@@ -209,7 +217,7 @@ function drawGiraffe() {
     giraffeY = height * 0.543;
   }
   image(giraffe, giraffeX, giraffeY, width * 0.18, width * 0.25);
-  setTimeout(stopPopUp1, 2500);
+  setTimeout(stopPopUp1, 2000);
   pop();
 }
 
