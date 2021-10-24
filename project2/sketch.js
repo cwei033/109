@@ -5,11 +5,9 @@ var update = true;
 var stage1;
 var canvas1;
 var clickID = "click";
-var bgmID = "bgm";
 
 function loadSound() {
   createjs.Sound.registerSound("assets/mixkit-fairy-magic-sparkle-871.wav", clickID);
-  createjs.Sound.registerSound("assets/SERENITY.mp3", bgmID);
 }
 
 function init() {
