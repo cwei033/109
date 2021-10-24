@@ -68,6 +68,7 @@ function handleImageLoadDark(event) {
     bitmap.regY = bitmap.image.height / 2 | 0;
     bitmap.scale = bitmap.originalScale = Math.random() * 0.06 + 0.08;
     bitmap.name = "bmp_" + i;
+    bitmap.cursor = "pointer";
 
     bitmap.on("mousedown", function(evt) {
       this.parent.addChild(this);
