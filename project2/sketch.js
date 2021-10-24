@@ -68,6 +68,34 @@ function handleImageLoadDark(event) {
     bitmap.regY = bitmap.image.height / 2 | 0;
     bitmap.scale = bitmap.originalScale = Math.random() * 0.06 + 0.08;
     bitmap.name = "bmp_" + i;
+
+    bitmap.on("mousedown", function(evt) {
+      this.parent.addChild(this);
+      this.offset = {
+        x: this.x - evt.stageX,
+        y: this.y - evt.stageY
+      };
+      playClick();
+    });
+
+    // the pressmove event is dispatched when the mouse moves after a mousedown on the target until the mouse is released.
+    bitmap.on("pressmove", function(evt) {
+      this.x = evt.stageX + this.offset.x;
+      this.y = evt.stageY + this.offset.y;
+      // indicate that the stage should be updated on the next tick:
+      update = true;
+    });
+
+    bitmap.on("rollover", function(evt) {
+      this.scale = this.originalScale * 1.2;
+      update = true;
+    });
+
+    bitmap.on("rollout", function(evt) {
+      this.scale = this.originalScale;
+      update = true;
+    });
+
   }
   createjs.Ticker.addEventListener("tick", tick);
 }
