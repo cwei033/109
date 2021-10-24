@@ -1,10 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat&display=swap');
+
 html, body {
   margin: 15px 150px;
   padding: 0;
+  background-color: #cfc29b;
+  overflow-y: hidden; // hide vertical
 }
+
+.container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
 canvas {
   display: block;
   left: 0px;
   top: 0px;
+  position: relative;
+}
+
+header {
+  display: block;
+  margin-top: -14px;
+  margin-left: 15px;
+  padding-bottom: 0;
+}
+
+h1 {
+  font-size: 25px;
+  color: #342c14;
+  font-family: 'Cinzel', serif;
+}
+
+p {
+  float: right;
+  margin-top: -46px;
+  margin-right: 280px;
+  font-family: 'Cinzel', serif;
+  color: #342c14;
+}
+
+.center {
+  margin: 0;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#aboutp {
+  margin: 0;
+  float: none;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 20px;
+}
+
+a {
+  color: #342c14;
+  text-decoration: none;
+}
+
+a:hover {
+  /* text-decoration: underline; */
+  color: #83702e;
+  transition: .5s ease;
+}
+
+audio {
+  float: right;
+  margin-top: -49px;
+  margin-right: 10px;
+  height: 30px;
+  width: 250px;
+}
+
+::selection {
+  background: #a7612d;
+  color: white;
+}
+
+.button {
+  background-color: #cfcfbf;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
 }
