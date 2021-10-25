@@ -174,6 +174,7 @@ function handleImageLoadFour(event) {
     bitmap.scale = bitmap.originalScale = Math.random() * 0.06 + 0.08;
     bitmap.name = "bmp_" + i;
     bitmap.cursor = "pointer";
+    console.log(bitmap.x, bitmap.y);
 
     // using "on" binds the listener to the scope of the currentTarget by default
     // in this case that means it executes in the scope of the button.
