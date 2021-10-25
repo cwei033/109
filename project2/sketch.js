@@ -162,7 +162,7 @@ function handleImageLoadFour(event) {
   stage1.addChild(container);
 
   // create and populate the screen with random daisies:
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 7; i++) {
     //A Bitmap represents an Image, Canvas, or Video in the display list. A Bitmap can be instantiated using an existing HTML element, or a string.
     bitmap = new createjs.Bitmap(image);
     container.addChild(bitmap);
