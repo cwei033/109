@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Playfair+Display:wght@500&family=Roboto+Slab&display=swap');
 
 html,
 body {
-  font-family: "Source Code Pro", monospace;
-  margin: auto;
+font-family: 'Roboto Slab', serif;  margin: auto;
   display: block;
   padding: 20px;
   background: url(assets/ep_naturalwhite.png)repeat;
@@ -32,7 +31,7 @@ canvas {
 
 h1 {
   font-family: 'Playfair Display SC', serif;
-  color: black;
+  color: #821705;
   max-width: 75%;
   text-align: center;
   margin: auto;
@@ -41,7 +40,7 @@ h1 {
 
 h2 {
   font-family: 'Playfair Display SC', serif;
-  color: black;
+  color: #8a7200;
   max-width: 75%;
   text-align: center;
   margin: auto;
@@ -55,7 +54,8 @@ p {
   padding: 0px;
   padding-left: 25%;
   padding-bottom: 20px;
-  line-height: 150%;
+  line-height: 170%;
+  color: #0c4d05;
 }
 
 p.mid {
@@ -65,5 +65,5 @@ p.mid {
 }
 
 a {
-  color: #735223;
+  color: #821705;
 }
