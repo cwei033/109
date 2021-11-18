@@ -2,7 +2,8 @@
 
 html,
 body {
-font-family: 'Roboto Slab', serif;  margin: auto;
+  font-family: 'Roboto Slab', serif;
+  margin: auto;
   display: block;
   padding: 20px;
   background: url(assets/ep_naturalwhite.png)repeat;
@@ -15,18 +16,10 @@ canvas {
   height: 100%;
   margin: auto;
   max-width: 800px;
-  /* border: 3px solid #6E2E99; */
-  border-radius: 3px;
 }
 
 #space {
   background: url(assets/longforest.jpg);
-}
-
-#space2 {
-  width: 525px;
-  height: 500px;
-  margin: auto;
 }
 
 h1 {
