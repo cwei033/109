@@ -4,7 +4,7 @@ var inc = 0.1; //change how smooth the graph is; smaller the number the smoother
 var start = 0; //make the starting point of the graph a variable so that you can change it so that the graph moves rather than stays stagnant
 let static;
 let desert;
-let state = 'flowmode';
+let state = 'staticmode';
 var scl = 20;
 var cols, rows;
 var zoff = 0;
@@ -47,12 +47,14 @@ function draw() {
   if (state == 'flowmode') {
     flowdetail();
   }
+  //buttons();
+
 
 }
 
 function staticdetail() {
   static.loop();
-  static.setVolume(0.05);
+  static.setVolume(0.005);
   //check pixels video (perlin 1.5 descripbox);
   loadPixels();
   for (var x = 0; x < width; x++) {
@@ -96,3 +98,20 @@ function flowdetail() {
     particles[i].show();
   }
 }
+//
+// function mousePressed() {
+//   if (mouseX > (width * .02 - 20) && mouseX < (width * .02 + 20) && mouseY > (height * .92 - 20) && mouseY < (height * .92 + 20)) {
+//       state = 'flowmode';
+//     } else {
+//       state = 'staticmode';
+//     }
+//   }
+
+  function buttons() {
+    push();
+    rectMode(CENTER);
+    fill(255);
+    noStroke();
+    circle(width * .02, height * .92, 40);
+    pop();
+  }
